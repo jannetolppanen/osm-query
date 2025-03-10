@@ -17,7 +17,7 @@ def main():
     fetcher = OSMDataFetcher()
     
     # Set parameters
-    country_name = "Netherlands"  # Using country name instead of code
+    country_name = "Italy"  # Using country name instead of code
     structure_type = "church"
     
     # Fetch data
