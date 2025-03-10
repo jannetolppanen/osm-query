@@ -1,0 +1,46 @@
+OSM Structure Finder Project Prompt
+You're helping me develop a Python project called "OSM Structure Finder" that fetches coordinates of specific structures (like churches, hospitals, etc.) from OpenStreetMap data.
+Project Overview
+
+Purpose: Retrieve coordinates and metadata for specific types of structures in given countries
+Data Source: OpenStreetMap via Overpass API
+Main Features: Country selection, structure type selection, data fetching and saving
+
+Project Structure
+
+Modular design with separate components for fetching, query building, and data saving
+Configuration files for country codes
+Data output in JSON format
+
+Key Components
+
+OSMDataFetcher class - Handles API requests to OpenStreetMap
+DataSaver class - Handles saving the retrieved data
+
+Usage Pattern
+
+User specifies a country name (e.g., "Netherlands", "Vatican City")
+User specifies a structure type (e.g., "church", "hospital")
+System looks up the country's ISO code from a JSON file
+System constructs an Overpass API query
+System fetches the data and saves it as JSON
+
+Implementation Details
+
+Using ISO 3166 country codes for reliable queries
+Retry mechanism with exponential backoff for API calls
+Saves output with naming convention: {country_name}_{structure_type}_length_{count}.json
+
+Current Status
+
+Basic functionality is working
+Successfully tested with Vatican City (small country with few churches)
+Working on making the project more modular and reusable
+
+If you need to continue work on this project, I should focus on:
+
+Improving modular structure
+Expanding query capabilities
+Adding more processing/filtering options
+Better error handling
+Documentation

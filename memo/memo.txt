@@ -1,0 +1,3 @@
+/src folderissa onko data_saver.py ja data_fetcher.py jotka toteuttavat datan hakuun ja tallentamiseen liittyvät toiminnot.
+
+/config folderissa on maakoodit iso formaatissa jota käytetään queryn tekoon

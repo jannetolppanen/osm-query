@@ -1,0 +1,274 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.5 1bd436f1",
+  "osm3s": {
+    "timestamp_osm_base": "2025-03-10T12:13:11Z",
+    "timestamp_areas_base": "2024-12-31T00:49:33Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "way",
+      "id": 44527163,
+      "center": {
+        "lat": 41.9023793,
+        "lon": 12.4508555
+      },
+      "nodes": [
+        565608725,
+        1282687533,
+        1282687493,
+        1282687542,
+        565608727,
+        5108562815,
+        1240180375,
+        6206003979,
+        565608733,
+        565608735,
+        565608739,
+        1282687530,
+        1282687494,
+        565608741,
+        1240180290,
+        1240179824,
+        565608725
+      ],
+      "tags": {
+        "alt_name": "Chiesa di Santa Maria Madre della Famiglia",
+        "amenity": "place_of_worship",
+        "architect": "Giuseppe Momo",
+        "architect:wikidata": "Q3771024",
+        "architect:wikipedia": "it:Giuseppe Momo",
+        "building": "church",
+        "building:architecture": "neobaroque",
+        "denomination": "roman_catholic",
+        "name": "Chiesa di Santa Maria Regina della Famiglia",
+        "name:de": "Heilige Maria Mutter der Familie Kirche",
+        "name:en": "St Mary's Church",
+        "name:es": "Iglesia Santa María Reina de la Familia",
+        "name:fr": "Église Sainte-Marie-Reine-de-la-Famille",
+        "name:it": "Chiesa di Santa Maria Regina della Famiglia",
+        "religion": "christian",
+        "short_name": "Chiesa di Santa Maria",
+        "short_name:es": "Iglesia Santa María",
+        "short_name:fr": "Église Sainte-Marie",
+        "start_date": "1931",
+        "wikidata": "Q3673525",
+        "wikimedia_commons": "Category:Santa_Maria_Regina_della_Famiglia_(Vatican_City)",
+        "wikipedia": "it:Chiesa di Santa Maria Regina della Famiglia"
+      }
+    },
+    {
+      "type": "way",
+      "id": 111699749,
+      "center": {
+        "lat": 41.903348,
+        "lon": 12.4567325
+      },
+      "nodes": [
+        1272012834,
+        1272012847,
+        1272012838,
+        1272012841,
+        1272012834
+      ],
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "church",
+        "building:colour": "lightyellow",
+        "building:material": "stone",
+        "denomination": "roman_catholic",
+        "height": "20",
+        "name": "Chiesa dei Santi Martino e Sebastiano degli Svizzeri",
+        "name:en": "Saints Martin and Sebastian of the Swiss",
+        "name:it": "Chiesa dei Santi Martino e Sebastiano degli Svizzeri",
+        "name:pt": "Igreja dos Santos Martinho e Sebastião dos Suíços",
+        "religion": "christian",
+        "roof:material": "copper",
+        "roof:shape": "flat",
+        "wikidata": "Q1644167",
+        "wikipedia": "it:Chiesa dei Santi Martino e Sebastiano degli Svizzeri"
+      }
+    },
+    {
+      "type": "way",
+      "id": 111754961,
+      "center": {
+        "lat": 41.9027589,
+        "lon": 12.448477
+      },
+      "nodes": [
+        1272451586,
+        1272451587,
+        1272451583,
+        410833129,
+        6204271860,
+        1272451586
+      ],
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "roman_catholic",
+        "name": "Grotta di Lourdes",
+        "name:cs": "Lurdská jeskyně",
+        "name:de": "Lourdesgrotte",
+        "name:en": "Lourdes Grotto",
+        "name:fr": "Grotte de Lourdes",
+        "name:it": "Grotta di Lourdes",
+        "name:sk": "Lurdská jaskyňa",
+        "place_of_worship": "lourdes_grotto",
+        "religion": "christian",
+        "wikidata": "Q13099380",
+        "wikipedia": "it:Grotta di Lourdes (Città del Vaticano)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 111797279,
+      "center": {
+        "lat": 41.9041603,
+        "lon": 12.4574867
+      },
+      "nodes": [
+        1272919350,
+        6198830246,
+        810086881,
+        1272919351,
+        1272919353,
+        1272919352,
+        1274309136,
+        6198830244,
+        1272919350
+      ],
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "catholic",
+        "name": "Chiesa di Sant'Anna dei Palafrenieri",
+        "name:de": "St. Anna der Palafrenierer",
+        "name:en": "Saint Anne of the Pontifical Grooms",
+        "name:it": "Chiesa di Sant'Anna dei Palafrenieri",
+        "name:pt": "Igreja de Santa Ana dos Cavalariços",
+        "religion": "christian",
+        "wheelchair": "no",
+        "wikidata": "Q3585393",
+        "wikimedia_commons": "Category:Sant'Anna dei Palafrenieri",
+        "wikipedia": "it:Chiesa di Sant'Anna dei Palafrenieri"
+      }
+    },
+    {
+      "type": "way",
+      "id": 111996197,
+      "center": {
+        "lat": 41.9049656,
+        "lon": 12.4570244
+      },
+      "nodes": [
+        1274312867,
+        1274312886,
+        1275511230,
+        1274312856,
+        1274312870,
+        1274312881,
+        1274312883,
+        1274312859,
+        1274312872,
+        1274312878,
+        1274312862,
+        1274312864,
+        1275511265,
+        1274312867
+      ],
+      "tags": {
+        "alt_name": "Chiesa di San Pellegrino in Vaticano",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "building:architecture": "romanic;baroque",
+        "denomination": "roman_catholic",
+        "name": "Chiesa di San Pellegrino in Naumachia",
+        "name:en": "Saint Peregrin's Church",
+        "name:it": "Chiesa di San Pellegrino in Naumachia",
+        "name:pt": "Igreja de São Peregrino no Vaticano",
+        "religion": "christian",
+        "start_date": "C8",
+        "wikidata": "Q3671583",
+        "wikimedia_commons": "Category:San Pellegrino in Vaticano",
+        "wikipedia": "it:Chiesa di San Pellegrino in Vaticano"
+      }
+    },
+    {
+      "type": "way",
+      "id": 130743575,
+      "center": {
+        "lat": 41.9017962,
+        "lon": 12.4519606
+      },
+      "nodes": [
+        565623618,
+        565623622,
+        565623624,
+        565623628,
+        565623639,
+        565623641,
+        565623644,
+        565623645,
+        1439167794,
+        1439167706,
+        1439167683,
+        1439167777,
+        1439167765,
+        1439167702,
+        1439167612,
+        1439167625,
+        1439167731,
+        1439167803,
+        565623652,
+        565623618
+      ],
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "roman_catholic",
+        "historic": "church",
+        "name": "Chiesa di Santo Stefano degli Abissini",
+        "name:en": "Saint Stephen of the Ethiopians",
+        "name:es": "Iglesia San Esteban de los Abisinios",
+        "name:fr": "Saint Étienne des Abyssins",
+        "name:it": "Chiesa di Santo Stefano degli Abissini",
+        "name:la": "Sanctus Stephanus ex Æthiops",
+        "name:pt": "Igreja de Santo Estêvão dos Abissínios",
+        "religion": "christian",
+        "start": "C7",
+        "wikidata": "Q1166213",
+        "wikimedia_commons": "Category:Santo Stefano degli Abissini",
+        "wikipedia": "it:Chiesa di Santo Stefano degli Abissini"
+      }
+    },
+    {
+      "type": "way",
+      "id": 337888676,
+      "center": {
+        "lat": 41.9043099,
+        "lon": 12.4573436
+      },
+      "nodes": [
+        1274309154,
+        1274309134,
+        1274309151,
+        1272919352,
+        1272919353,
+        1274309137,
+        1274309154
+      ],
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "catholic",
+        "name": "Chiesa di Sant'Egidio a Borgo",
+        "religion": "christian",
+        "wikidata": "Q3672761",
+        "wikipedia": "it:Chiesa di Sant'Egidio a Borgo"
+      }
+    }
+  ]
+}
