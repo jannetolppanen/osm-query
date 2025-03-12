@@ -1,0 +1,88 @@
+{
+"church": {
+  "description": "Christian places of worship including churches, basilicas and cathedrals",
+  "query_type": "center",
+  "tags": [
+    {
+      "type": "primary",
+      "conditions": [
+        {"key": "amenity", "value": "place_of_worship"},
+        {"key": "religion", "value": "christian"}
+      ]
+    },
+    {
+      "type": "building",
+      "conditions": [
+        {"key": "building", "value": "church"}
+      ]
+    },
+    {
+      "type": "building",
+      "conditions": [
+        {"key": "building", "value": "cathedral"}
+      ]
+    },
+    {
+      "type": "building",
+      "conditions": [
+        {"key": "building", "value": "basilica"}
+      ]
+    }
+  ]
+},
+  "national_park": {
+    "description": "National parks and protected areas",
+    "query_type": "geom",
+    "tags": [
+      {
+        "type": "primary",
+        "conditions": [
+          {"key": "boundary", "value": "national_park"}
+        ]
+      },
+      {
+        "type": "alternative",
+        "conditions": [
+          {"key": "leisure", "value": "nature_reserve"},
+          {"key": "protect_class", "value": "2"}
+        ]
+      }
+    ]
+  },
+  "museum": {
+    "description": "Museums and galleries",
+    "query_type": "center",
+    "tags": [
+      {
+        "type": "primary",
+        "conditions": [
+          {"key": "tourism", "value": "museum"}
+        ]
+      },
+      {
+        "type": "alternative",
+        "conditions": [
+          {"key": "amenity", "value": "arts_centre"}
+        ]
+      }
+    ]
+  },
+  "restaurant": {
+    "description": "Restaurants and eateries",
+    "query_type": "center",
+    "tags": [
+      {
+        "type": "primary",
+        "conditions": [
+          {"key": "amenity", "value": "restaurant"}
+        ]
+      },
+      {
+        "type": "alternative",
+        "conditions": [
+          {"key": "amenity", "value": "cafe"}
+        ]
+      }
+    ]
+  }
+}

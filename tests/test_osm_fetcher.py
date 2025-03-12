@@ -1,4 +1,4 @@
-# test_osm_fetcher.py
+# test_osm_fetcher_updated.py
 import pytest
 import json
 from pathlib import Path
@@ -18,7 +18,31 @@ def sample_country_codes():
     }
 
 @pytest.fixture
-def mock_fetcher(tmp_path, sample_country_codes):
+def sample_location_types():
+    return {
+        "church": {
+            "description": "Christian places of worship",
+            "query_type": "center",
+            "tags": [
+                {
+                    "type": "primary",
+                    "conditions": [
+                        {"key": "amenity", "value": "place_of_worship"},
+                        {"key": "religion", "value": "christian"}
+                    ]
+                },
+                {
+                    "type": "building",
+                    "conditions": [
+                        {"key": "building", "value": "church"}
+                    ]
+                }
+            ]
+        }
+    }
+
+@pytest.fixture
+def mock_fetcher(tmp_path, sample_country_codes, sample_location_types):
     # Create a temporary config directory
     config_dir = tmp_path / "config"
     config_dir.mkdir()
@@ -27,6 +51,11 @@ def mock_fetcher(tmp_path, sample_country_codes):
     country_codes_file = config_dir / "country_codes.json"
     with open(country_codes_file, 'w') as f:
         json.dump(sample_country_codes, f)
+    
+    # Create a temporary location types file
+    location_types_file = config_dir / "location_types.json"
+    with open(location_types_file, 'w') as f:
+        json.dump(sample_location_types, f)
     
     # Create and return the fetcher with the temp config path
     return OSMDataFetcher(config_path=str(config_dir))
@@ -41,11 +70,12 @@ def test_get_country_code(mock_fetcher):
     assert mock_fetcher.get_country_code("netherlands") == "NL"  # Test case insensitivity
     assert mock_fetcher.get_country_code("Nonexistent Country") is None
 
-# Test query building
+# Test query building with updated method
 def test_build_query(mock_fetcher):
     query = mock_fetcher.build_query("NL", "church")
     assert "area[\"ISO3166-1\"=\"NL\"]" in query
     assert "node[\"building\"=\"church\"]" in query
+    assert "out center body;" in query  # Check for the output type
 
 # Test fetch_data with mocked API response
 @patch('requests.post')
@@ -75,7 +105,6 @@ def test_fetch_data_success(mock_post, mock_fetcher):
 @patch('requests.post')
 def test_fetch_data_error(mock_post, mock_fetcher):
     # Mock a request exception
-    from requests.exceptions import RequestException
     mock_post.side_effect = RequestException("API Error")
     
     # Call fetch_data
@@ -84,3 +113,9 @@ def test_fetch_data_error(mock_post, mock_fetcher):
     # Assert results
     assert data is None
     assert country_code == "NL"
+
+# Test fetch_data with non-existent country
+def test_fetch_data_nonexistent_country(mock_fetcher):
+    data, country_code = mock_fetcher.fetch_data("Nonexistent Country", "church")
+    assert data is None
+    assert country_code is None
